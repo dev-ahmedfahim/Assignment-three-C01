@@ -1,11 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse4Pets</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome Cdn -->
+    <script
+      src="https://kit.fontawesome.com/1007e9949d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Styles -->
+    <style>
+      .font-adlam {
+        font-family: "ADLaM Display", serif;
+      }
+
+      .font-sora {
+        font-family: "Sora", serif;
+      }
+    </style>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="font-sora">
+    <header
+      class="max-w-screen mx-auto bg-[#FFF9F4] py-3 lg:py-7 mb-8 lg:mb-19 border md:border-0 overflow-hidden"
+    >
+      <!-- navbar started -->
+      <nav
+        class="max-w-89.5 lg:max-w-330 mx-auto flex justify-between items-center"
+      >
+        <!-- logo started -->
+        <div class="flex gap-3 items-center">
+          <img src="assets/logo-header.png" alt="" />
+          <h3 class="text-2xl hidden md:block">
+            Browse<span class="text-[#FFDC26]">4</span>Pets
+          </h3>
+        </div>
+        <!-- links started-->
+        <div class="hidden md:block">
+          <ul class="flex gap-8 text-xl">
+            <li><a class="text-black" href="#">Find a pet</a></li>
+            <li><a class="text-black" href="#">Breeds</a></li>
+            <li><a class="text-black" href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <!-- button started -->
+        <div class="hidden md:block">
+          <div class="flex items-center gap-4">
+            <i class="fa-regular fa-bell text-2xl"></i>
+            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            <button
+              class="text-xl border border-[#FFDC26] py-2.5 px-7 rounded-lg"
+            >
+              Login
+            </button>
+            <button
+              class="text-xl bg-[#FFDC26] py-2.5 px-7 rounded-lg border border-[#FFDC26]"
+            >
+              Resister
+            </button>
+          </div>
+        </div>
+        <!--responsive menubar -->
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <!-- Navbar ended -->
+    </header>
+    <main class="font-sora lg:max-w-screen max-w-89.5 mx-auto">
+      <!-- Hero section started -->
+      <section class="lg:max-w-330 mx-auto lg:relative lg:mb-35">
+        <!-- hero text -->
+        <div class="lg:absolute lg:top-5">
+          <h3
+            class="relative font-adlam text-3xl lg:text-6xl w-89.5 lg:w-170 mb-2 lg:mb-4"
+          >
+            Pamper Your Pet, Because They Deserve the Bes
+          </h3>
+          <p class="lg:text-xl text-gray-500 w-87.5 lg:w-168 mb-3 lg:mb-8">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button
+            class="text-xl bg-[#FFDC26] py-2.5 px-7 rounded-lg border border-[#FFDC26]"
+          >
+            Find a Pet
+          </button>
+        </div>
+        <!-- hero img  -->
+        <div class="hidden md:block">
+          <img src="assets/cat-big.png" alt="" />
+        </div>
+        <!-- hero img responsive -->
+        <div class="md:hidden">
+          <img
+            class="h-57 relative -top-25 -z-10"
+            src="assets/cat-big.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- Hero section ended -->
+      <!-- browse by categories section started  -->
+      <section class="lg:max-w-330 mx-auto mb-14 lg:mb-31.5">
+        <div>
+          <!-- Categories title -->
+          <h3 class="relative font-adlam text-2xl lg:text-4xl mb-8 lg:mb-12">
+            Browse By Categories
+          </h3>
+        </div>
+        <!-- categories card container -->
+        <div
+          class="grid grid-cols-2 gap-2.5 lg:grid-cols-6 lg:gap-6 text-center"
+        >
+          <!-- card-1 -->
+          <div>
+            <div
+              class="rounded-xl bg-[#F9DF8A] overflow-hidden py-7.5 lg:py-8.5"
+            >
+              <div
+                class="mx-auto w-22.5 lg:w-26 bg-white rounded-full mb-5 lg:mb-6 p-6 lg:p-7"
+              >
+                <img
+                  class="w-10.5 h-10.5 lg:w-12 lg:h-12"
+                  src="assets/dog-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <h4 class="font-adlam text-xl mb-2.5 lg:mb-3">Dog</h4>
+              <p>3 Items</p>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div>
+            <div
+              class="rounded-xl bg-[#F9DF8A] overflow-hidden py-7.5 lg:py-8.5"
+            >
+              <div
+                class="mx-auto w-22.5 lg:w-26 bg-white rounded-full mb-5 lg:mb-6 p-6 lg:p-7"
+              >
+                <img
+                  class="w-10.5 h-10.5 lg:w-12 lg:h-12"
+                  src="assets/fish-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <h4 class="font-adlam text-xl mb-2.5 lg:mb-3">Fish</h4>
+              <p>3 Items</p>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div>
+            <div
+              class="rounded-xl bg-[#F9DF8A] overflow-hidden py-7.5 lg:py-8.5"
+            >
+              <div
+                class="mx-auto w-22.5 lg:w-26 bg-white rounded-full mb-5 lg:mb-6 p-6 lg:p-7"
+              >
+                <img
+                  class="w-10.5 h-10.5 lg:w-12 lg:h-12"
+                  src="assets/cat-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <h4 class="font-adlam text-xl mb-2.5 lg:mb-3">Cat</h4>
+              <p>3 Items</p>
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div>
+            <div
+              class="rounded-xl bg-[#F9DF8A] overflow-hidden py-7.5 lg:py-8.5"
+            >
+              <div
+                class="mx-auto w-22.5 lg:w-26 bg-white rounded-full mb-5 lg:mb-6 p-6 lg:p-7"
+              >
+                <img
+                  class="w-10.5 h-10.5 lg:w-12 lg:h-12"
+                  src="assets/bird-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <h4 class="font-adlam text-xl mb-2.5 lg:mb-3">Birds</h4>
+              <p>3 Items</p>
+            </div>
+          </div>
+          <!-- card-5 -->
+          <div>
+            <div
+              class="rounded-xl bg-[#F9DF8A] overflow-hidden py-7.5 lg:py-8.5"
+            >
+              <div
+                class="mx-auto w-22.5 lg:w-26 bg-white rounded-full mb-5 lg:mb-6 p-6 lg:p-7"
+              >
+                <img
+                  class="w-10.5 h-10.5 lg:w-12 lg:h-12"
+                  src="assets/mouse-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <h4 class="font-adlam text-xl mb-2.5 lg:mb-3">Small pet</h4>
+              <p>3 Items</p>
+            </div>
+          </div>
+          <!-- card-6 -->
+          <div>
+            <div
+              class="rounded-xl bg-[#F9DF8A] overflow-hidden py-7.5 lg:py-8.5"
+            >
+              <div
+                class="mx-auto w-22.5 lg:w-26 bg-white rounded-full mb-5 lg:mb-6 p-6 lg:p-7"
+              >
+                <img
+                  class="w-10.5 h-10.5 lg:w-12 lg:h-12"
+                  src="assets/rabbit-cartoon.png"
+                  alt=""
+                />
+              </div>
+              <h4 class="font-adlam text-xl mb-2.5 lg:mb-3">Rabbit</h4>
+              <p>2 Items</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
